@@ -1,0 +1,23 @@
+body {
+    background-color:black;
+    color:aliceblue;
+    font-size:22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color:orangered;
+    animation: piscar 2s infinite
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
