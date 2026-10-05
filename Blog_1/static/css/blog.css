@@ -7,17 +7,27 @@ body {
 
 a {
     color:orangered;
-    animation: piscar 2s infinite
 }
 
-@keyframes piscar {
-    50% {
-        opacity: 0;
-    }
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
+.left {
+    float: left;
+    width: 48%;
+}
+
+.left + .left {
+    margin-left: 4%;
+}
+
+.comment-form .body {
+    clear: both;
+}
+
+.comment-form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comment-form p {
+    clear: both;
 }
